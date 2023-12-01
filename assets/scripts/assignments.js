@@ -27,9 +27,9 @@ console.log(countChar('JavaScripT'))
 // Q 3: COUNT SPECIFIC UPPERCASE
 
 const countBs = (str, char) => {
-  const count = 0
+  let count = 0
   for (let i = 0; i <= str.length - 1; i++) {
-    if (str[i] === char) {
+    if(str[i] === char) {
       count++
     }
   }
@@ -43,9 +43,9 @@ console.log(countBs('truthy AND falsy', 'A'))
 // Q 5: RANGE
 
 const range = (start, end) => {
-  const count = []
+  let count = []
   // end = count[count.length - 1]
-  for (let i = start; i <= end; i++ ) {
+  for (let i = start; i <= end; i++) {
     // count++
     count.push(i)
   }
@@ -54,18 +54,17 @@ const range = (start, end) => {
 
 console.log(range(2, 4))
 
-
 // Q 6: STEP-RANGE (returns fatal error...when tested for a decreament)
 
 const stepRange = (start, end, incri) => {
-  const count = []
+  let count = []
   // end = count[count.length - 1]
   for (let i = start; i <= end; i += incri) {
-    // if (start++ || end--) {... 
-    count.push(i) 
+    // if (start++ || end--) {...
+    count.push(i)
     // i += incri
     // }
-  }  
+  }
   return count
 }
 
@@ -77,8 +76,8 @@ console.log(stepRange(1, 15, 4)) // =>
 
 const arraySum = (arr) => {
   // count from zero not an empty array...
-  const accumulator = 0
-  let looped = arr.length - 1
+  let accumulator = 0
+  const looped = arr.length - 1
   for (let i = 0; i <= looped; i++) {
     // accum.push(i) xxx
     accumulator += arr[i]
@@ -86,24 +85,24 @@ const arraySum = (arr) => {
   return accumulator
 }
 
-let theArr = [1, 2, 3]
+const theArr = [1, 2, 3]
 console.log(arraySum(theArr)) // => 6
 
 // Q 9: RETURN THE AVERAGE OF THE ARRAY NUMBERS
 
 const arrAvr = (list) => {
-  const count = 0
-  let stretch = list.length - 1
+  let count = 0
+  const stretch = list.length - 1
   for (let i = 0; i <= stretch; i++) {
     count += list[i]
     // console.log(list[i])
   }
   return count / (list.length)
 }
-let arre = [20, 30, 40, 50]
+const arre = [20, 30, 40, 50]
 console.log(arrAvr(arre)) // => 35
 
-// Q 10: 
+// Q 10:
 
 const deepEqual = (a, b) => {
   // The OR and its right hand condition allows for that flexibility
@@ -114,12 +113,15 @@ const deepEqual = (a, b) => {
   }
 }
 console.log(deepEqual('3', 3)) // => true
-// 
+//
 
-const obj1 = Object();
-obj1.name = 'terry',
-obj1.city = 'bertoua'
-const obj2 = Object();
-obj2.name = 'terry',
-obj2.city = 'bertoua'
-console.log(deepEqual(obj1, obj2)) // Says !true..
+const person1 = {
+  nme: 'Eric',
+  tall: 'true'
+}
+
+const person2 = {
+  nme: 'Eric',
+  tall: 'true'
+}
+console.log(deepEqual(person1, person2)) // Says !true..
