@@ -27,7 +27,7 @@ console.log(countChar('JavaScripT'))
 // Q 3: COUNT SPECIFIC UPPERCASE
 
 const countBs = (str, char) => {
-  const count = 0
+  let count = 0
   for (let i = 0; i <= str.length - 1; i++) {
     if (str[i] === char) {
       count++
@@ -57,7 +57,7 @@ console.log(range(2, 4))
 // Q 6: STEP-RANGE (returns fatal error...when tested for a decreament)
 
 const stepRange = (start, end, incri) => {
-  const count = []
+  let count = []
   // end = count[count.length - 1]
   for (let i = start; i <= end; i += incri) {
     // if (start++ || end--) {...
