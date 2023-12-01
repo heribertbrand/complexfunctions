@@ -43,7 +43,7 @@ console.log(countBs('truthy AND falsy', 'A'))
 // Q 5: RANGE
 
 const range = (start, end) => {
-  let count = []
+  const count = []
   // end = count[count.length - 1]
   for (let i = start; i <= end; i++) {
     // count++
@@ -57,7 +57,7 @@ console.log(range(2, 4))
 // Q 6: STEP-RANGE (returns fatal error...when tested for a decreament)
 
 const stepRange = (start, end, incri) => {
-  let count = []
+  const count = []
   // end = count[count.length - 1]
   for (let i = start; i <= end; i += incri) {
     // if (start++ || end--) {...
