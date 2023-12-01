@@ -27,9 +27,9 @@ console.log(countChar('JavaScripT'))
 // Q 3: COUNT SPECIFIC UPPERCASE
 
 const countBs = (str, char) => {
-  let count = 0
+  const count = 0
   for (let i = 0; i <= str.length - 1; i++) {
-    if(str[i] === char) {
+    if (str[i] === char) {
       count++
     }
   }
@@ -57,7 +57,7 @@ console.log(range(2, 4))
 // Q 6: STEP-RANGE (returns fatal error...when tested for a decreament)
 
 const stepRange = (start, end, incri) => {
-  let count = []
+  const count = []
   // end = count[count.length - 1]
   for (let i = start; i <= end; i += incri) {
     // if (start++ || end--) {...
@@ -106,13 +106,13 @@ console.log(arrAvr(arre)) // => 35
 
 const deepEqual = (a, b) => {
   // The OR and its right hand condition allows for that flexibility
-  if (a === b || a == b) {
+  if (a === b || a === b) {
     return true
   } else {
     return false
   }
 }
-console.log(deepEqual('3', 3)) // => true
+console.log(deepEqual(3, 3)) // => true
 //
 
 const person1 = {
