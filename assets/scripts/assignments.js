@@ -116,10 +116,10 @@ const deepEqual = (a, b) => {
 console.log(deepEqual('3', 3)) // => true
 // 
 
-const obj1 = Object{}
-const obj2 = Object{}
-obj1.name = 'terry'
+const obj1 = Object();
+obj1.name = 'terry',
 obj1.city = 'bertoua'
-obj2.name = 'terry'
+const obj2 = Object();
+obj2.name = 'terry',
 obj2.city = 'bertoua'
 console.log(deepEqual(obj1, obj2)) // Says !true..
